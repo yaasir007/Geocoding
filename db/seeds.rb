@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+flat = Flat.create(name: "Yaasir", address: "Port-Louis, Mauritius")
+flat1 = Flat.create(name: "Cheekoory", address: "Rose-Hill, Mauritius")
+flat2 = Flat.create(name: "Anaz", address: "Rose-Belle, Mauritius")
+flat3 = Flat.create(name: "Al-shaad", address: "Ebene, Mauritius")
+
+
+

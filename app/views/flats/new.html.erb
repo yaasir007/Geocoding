@@ -1,0 +1,7 @@
+<div align="center"> 
+    <%= simple_form_for [@flat] do |f| %>
+        <%= f.input :name, html5: true %>
+        <%= f.input :address, html5: true %>
+        <%= f.submit 'Create' %>
+    <% end %>
+</div>
