@@ -1,5 +1,5 @@
-<!--
 <div align="center">
+
     <div> 
         <% @flats.each do |flat| %>
             <%= link_to  flat.name, flat_path(flat) %>
@@ -7,15 +7,19 @@
         <% end %>
     </div>
 
+    <div id="map" style="width: 70%; height: 500px;" 
+            data-markers="<%= @markers.to_json %>"
+            data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
+
+    
+
     <div>
         <%= link_to  "Create", new_flat_path %>
     </div>
--->
-
-    <div id="map" style="width: 100vw; height: 100vh;" 
-        data-markers="<%= @markers.to_json %>"
-        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-    </div>
 
 </div>
+
+
+    
 

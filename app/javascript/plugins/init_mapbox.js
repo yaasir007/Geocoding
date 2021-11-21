@@ -73,9 +73,7 @@ const initMapbox = () => {
 
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/yaasir007/ckw82y0v9b3jw14pabojmqf0s',
-        center: [-20.263,57.608],
-        zoom: 9.15,
+        style: 'mapbox://styles/yaasir007/ckw82y0v9b3jw14pabojmqf0s'
         });
 
     const markers = JSON.parse(mapElement.dataset.markers);
